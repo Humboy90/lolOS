@@ -14,6 +14,7 @@ public class popup1 : MonoBehaviour
     {
        Instantiate(popup,canvas.transform);
        popup.GetComponent<drag>().dragRectTransform.SetAsLastSibling();
+       
 
     }
 }
