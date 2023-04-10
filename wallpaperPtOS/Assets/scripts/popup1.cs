@@ -8,12 +8,35 @@ public class popup1 : MonoBehaviour
 {
     public GameObject popup;
     public Canvas canvas;
+    public IdentityItem idItem;
+    public GameObject spawnedTab;
+
 
     // Update is called once per frame
     public void spawnpopup()
     {
-       Instantiate(popup,canvas.transform);
-       popup.GetComponent<drag>().dragRectTransform.SetAsLastSibling();
+        spawnedTab = GameObject.FindGameObjectWithTag("WIPTAB");
+        if (spawnedTab == null)
+        {
+            Instantiate(popup, canvas.transform);
+
+            spawnedTab = GameObject.FindGameObjectWithTag("WIPTAB");
+            //spawnedTab.GetComponent<drag>().dragRectTransform.SetAsLastSibling();
+            idItem.WIPtextUpdater(spawnedTab);
+        }
+        else
+        {
+            Destroy(spawnedTab);
+            Instantiate(popup, canvas.transform);
+
+            spawnedTab = GameObject.FindGameObjectWithTag("WIPTAB");
+            //spawnedTab.GetComponent<drag>().dragRectTransform.SetAsLastSibling();
+            idItem.WIPtextUpdater(spawnedTab);
+        }
+        
+            
+            
+        
        
 
     }
