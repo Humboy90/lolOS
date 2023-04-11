@@ -8,6 +8,7 @@ TagManager:
   - background
   - taskbar
   - WIPTAB
+  - canvas
   layers:
   - Default
   - TransparentFX

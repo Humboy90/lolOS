@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class TaskbarSettings : MonoBehaviour
 {
     public GameObject taskbar;
+    public GameObject canvas;
     
 
     // Update is called once per frame
@@ -15,15 +16,19 @@ public class TaskbarSettings : MonoBehaviour
         {
             taskbar = GameObject.FindGameObjectWithTag("taskbar");
         }
+        if (canvas == null)
+        {
+            canvas = GameObject.FindGameObjectWithTag("canvas");
+        }
 
     }
 
     public void Windows11Normal()
     {
-        taskbar.GetComponent<RectTransform>().position = new Vector3(551.5f, 58, 0);
+        taskbar.GetComponent<RectTransform>().position = new Vector3(canvas.transform.position.x, 58, 0);
     }
     public void ResetTaskbar()
     {
-        taskbar.GetComponent<RectTransform>().position = new Vector3(551.5f, 15, 0);
+        taskbar.GetComponent<RectTransform>().position = new Vector3(canvas.transform.position.x, 15, 0);
     }
 }

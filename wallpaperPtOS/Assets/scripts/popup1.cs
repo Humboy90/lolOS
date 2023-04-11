@@ -15,6 +15,13 @@ public class popup1 : MonoBehaviour
     // Update is called once per frame
     public void spawnpopup()
     {
+        Instantiate(popup, canvas.transform);
+
+        //spawnedTab.GetComponent<drag>().dragRectTransform.SetAsLastSibling();
+    }
+
+    public void spawnWIPtab()
+    {
         spawnedTab = GameObject.FindGameObjectWithTag("WIPTAB");
         if (spawnedTab == null)
         {
@@ -33,11 +40,5 @@ public class popup1 : MonoBehaviour
             //spawnedTab.GetComponent<drag>().dragRectTransform.SetAsLastSibling();
             idItem.WIPtextUpdater(spawnedTab);
         }
-        
-            
-            
-        
-       
-
     }
 }

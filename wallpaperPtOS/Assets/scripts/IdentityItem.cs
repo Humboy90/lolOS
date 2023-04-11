@@ -15,6 +15,6 @@ public class IdentityItem : MonoBehaviour
     public void WIPtextUpdater(GameObject popup)
     {
         Debug.Log(popup.name);
-        popup.transform.FindChild("version").GetComponent<Text>().text = gameObj.name + " - v" + version;
+        popup.transform.Find("version").GetComponent<Text>().text = gameObj.name + " - v" + version;
     }
 }

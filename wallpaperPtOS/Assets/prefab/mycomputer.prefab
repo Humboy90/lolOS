@@ -1883,6 +1883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskbar: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!1 &4058400311110151796
 GameObject:
   m_ObjectHideFlags: 0
@@ -2961,6 +2962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   taskbar: {fileID: 0}
+  canvas: {fileID: 0}
 --- !u!1 &6634097883897713972
 GameObject:
   m_ObjectHideFlags: 0

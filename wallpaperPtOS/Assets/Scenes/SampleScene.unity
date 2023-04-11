@@ -4370,7 +4370,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1126368027}
         m_TargetAssemblyTypeName: popup1, Assembly-CSharp
-        m_MethodName: spawnpopup
+        m_MethodName: spawnWIPtab
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4402,7 +4402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popup: {fileID: 5964791422421619273, guid: 7322a07c4b3d5814990d7cc0e57eca51, type: 3}
   canvas: {fileID: 1546926589}
-  idItem: {fileID: 0}
+  idItem: {fileID: 1126368028}
   spawnedTab: {fileID: 0}
 --- !u!114 &1126368028
 MonoBehaviour:
@@ -4859,6 +4859,7 @@ GameObject:
   - component: {fileID: 1216769498}
   - component: {fileID: 1216769496}
   - component: {fileID: 1216769495}
+  - component: {fileID: 1216769499}
   m_Layer: 5
   m_Name: calculator
   m_TagString: Untagged
@@ -4902,7 +4903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popup: {fileID: 785608358718406366, guid: 92322c7a15e3290489d63fb332bcd894, type: 3}
   canvas: {fileID: 1546926589}
-  idItem: {fileID: 0}
+  idItem: {fileID: 1216769499}
   spawnedTab: {fileID: 0}
 --- !u!114 &1216769496
 MonoBehaviour:
@@ -4950,7 +4951,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1216769495}
         m_TargetAssemblyTypeName: popup1, Assembly-CSharp
-        m_MethodName: spawnpopup
+        m_MethodName: spawnWIPtab
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4968,6 +4969,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1216769493}
   m_CullTransparentMesh: 1
+--- !u!114 &1216769499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216769493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85359a0ff43465c4590917829b8d911f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObj: {fileID: 1216769493}
+  version: 0.1.1
 --- !u!1 &1239830406
 GameObject:
   m_ObjectHideFlags: 0
@@ -5200,6 +5215,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8442855062626914805, guid: b80ee59046033ee4b98317269d128f69, type: 3}
   m_PrefabInstance: {fileID: 1324160113}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1358147223
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1358147224}
+  m_Layer: 0
+  m_Name: importantvars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1358147224
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358147223}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 485.59457, y: 310.44702, z: -198.39941}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1455001991
 GameObject:
   m_ObjectHideFlags: 0
@@ -5699,7 +5745,7 @@ GameObject:
   - component: {fileID: 1546926587}
   m_Layer: 5
   m_Name: dektop
-  m_TagString: Untagged
+  m_TagString: canvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6072,6 +6118,7 @@ GameObject:
   - component: {fileID: 1623102940}
   - component: {fileID: 1623102939}
   - component: {fileID: 1623102938}
+  - component: {fileID: 1623102941}
   m_Layer: 5
   m_Name: recycle bin
   m_TagString: Untagged
@@ -6115,7 +6162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popup: {fileID: 5964791422421619273, guid: 7322a07c4b3d5814990d7cc0e57eca51, type: 3}
   canvas: {fileID: 1546926589}
-  idItem: {fileID: 0}
+  idItem: {fileID: 1623102941}
   spawnedTab: {fileID: 0}
 --- !u!114 &1623102939
 MonoBehaviour:
@@ -6163,7 +6210,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1623102938}
         m_TargetAssemblyTypeName: popup1, Assembly-CSharp
-        m_MethodName: spawnpopup
+        m_MethodName: spawnWIPtab
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6181,6 +6228,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1623102936}
   m_CullTransparentMesh: 1
+--- !u!114 &1623102941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623102936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85359a0ff43465c4590917829b8d911f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameObj: {fileID: 1623102936}
+  version: 0.1.1
 --- !u!1 &1649357644
 GameObject:
   m_ObjectHideFlags: 0
@@ -7590,7 +7651,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8372362210409799526}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7601,7 +7662,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 99, y: 15.3}
+  m_AnchoredPosition: {x: 99, y: 15.299988}
   m_SizeDelta: {x: 29.799988, y: 27.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8372362210409799522
