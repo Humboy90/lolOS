@@ -27,4 +27,20 @@ public class popupinternal : MonoBehaviour
         }
 
     }
+
+    public void SwapTab()
+    {
+        if (boolean == false)
+        {
+            newtab.SetActive(true);
+            hometab.SetActive(false);
+            boolean = true;
+        }
+        else if (boolean == true)
+        {
+            newtab.SetActive(false);
+            hometab.SetActive(true);
+            boolean = false;
+        }
+    }
 }
