@@ -1,5 +1,5 @@
 # lolOS
-windows 98. but shitter.
+windows 98. but from walmart.
 
 
 Made by Mytheral
